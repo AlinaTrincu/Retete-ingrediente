@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<hibernate-mapping>
+	<class name="pojo.Asocieri" table="ingrediente_reteta"
+		catalog="alina_trincu" optimistic-lock="version">
+		<id name="idlegatura" type="java.lang.Integer">
+			<column name="idlegatura" />
+			<generator class="identity" />
+		</id>
+		<many-to-one name="retete" class="pojo.Retete" fetch="select">
+			<column name="idreteta" />
+		</many-to-one>
+		<many-to-one name="ingrediente" class="pojo.Ingrediente" fetch="select">
+			<column name="idingredient" />
+		</many-to-one>
+		<property name="cantitateIngredient" type="string">
+			<column name="cantitate_ingredient" length="45" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-reverse-engineering>
+    <schema-selection match-catalog="alina_trincu"/>
+    <table-filter match-name="retete"/>
+    <table-filter match-name="ingrediente"/>
+    <table-filter match-name="ingrediente_reteta"/>
+</hibernate-reverse-engineering>

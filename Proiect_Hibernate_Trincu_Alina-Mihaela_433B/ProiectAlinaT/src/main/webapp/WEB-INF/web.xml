@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ReteteController</servlet-name>
+        <servlet-class>Controller.ReteteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IngredienteController</servlet-name>
+        <servlet-class>Controller.IngredienteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AsocieriController</servlet-name>
+        <servlet-class>Controller.AsocieriController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReteteController</servlet-name>
+        <url-pattern>/ReteteController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IngredienteController</servlet-name>
+        <url-pattern>/IngredienteController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AsocieriController</servlet-name>
+        <url-pattern>/AsocieriController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

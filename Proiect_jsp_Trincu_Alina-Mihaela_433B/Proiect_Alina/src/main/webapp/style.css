@@ -1,0 +1,66 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    background-image: url('foto.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 18px;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 130px;
+    margin-left: -25px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 50%;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.left-column {
+    margin-left: 300px;
+}
+
+.right-column {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: gray; /* Culoarea textului când mouse-ul este peste link */
+}
+
+a:active {
+    color: gray; /* Culoarea textului după ce butonul este apăsat (atunci când link-ul este activ) */
+}

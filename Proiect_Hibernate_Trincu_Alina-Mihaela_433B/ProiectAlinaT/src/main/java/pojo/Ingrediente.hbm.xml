@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<hibernate-mapping>
+	<class name="pojo.Ingrediente" table="ingrediente" catalog="alina_trincu"
+		optimistic-lock="version">
+		<id name="idingredient" type="java.lang.Integer">
+			<column name="idingredient" />
+			<generator class="identity" />
+		</id>
+		<property name="nume" type="string">
+			<column name="nume" length="45" />
+		</property>
+		<property name="pret" type="string">
+			<column name="pret" length="45" />
+		</property>
+		<property name="unitateMasura" type="string">
+			<column name="unitate_de_masura" length="45" />
+		</property>
+		<property name="dataExpirare" type="string">
+			<column name="data_expirare" length="45" />
+		</property>
+		<set name="asociere" table="ingrediente_reteta" inverse="true"
+			lazy="true" fetch="select">
+			<key>
+				<column name="idingredient" />
+			</key>
+			<one-to-many class="pojo.Asocieri" />
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<hibernate-mapping>
+	<class name="pojo.Retete" table="retete" catalog="alina_trincu"
+		optimistic-lock="version">
+		<id name="idreteta" type="java.lang.Integer">
+			<column name="idreteta" />
+			<generator class="identity" />
+		</id>
+		<property name="nume" type="string">
+			<column name="nume" length="45" />
+		</property>
+		<property name="timpPreparare" type="string">
+			<column name="timp_de_preparare" length="45" />
+		</property>
+		<property name="dificultate" type="string">
+			<column name="dificultate" length="45" />
+		</property>
+		<property name="numarPortii" type="string">
+			<column name="numar_portii" length="45" />
+		</property>
+		<set name="asociere" table="ingrediente_reteta" inverse="true"
+			lazy="true" fetch="select">
+			<key>
+				<column name="idreteta" />
+			</key>
+			<one-to-many class="pojo.Asocieri" />
+		</set>
+	</class>
+</hibernate-mapping>

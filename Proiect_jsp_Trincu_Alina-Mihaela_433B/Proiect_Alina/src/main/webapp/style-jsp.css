@@ -1,0 +1,52 @@
+/* style-jsp.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+      background-image: url('alb.jpg');
+    background-size: 150% 280%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+}
+
+.smaller-table {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.styled-table th {
+    background-color: #555; 
+    color: white;
+}
+
+.button, .home-button {
+    color: black;
+    background-color: gainsboro;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover, .home-button:hover {
+    color: gray;
+    background-color: #dcdcdc;
+}
+
